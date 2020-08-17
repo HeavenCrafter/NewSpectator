@@ -1,4 +1,4 @@
-package a0c5b9ef4780841b9933b51c6259002a4;
+package a5ef9205469334a0e9754958560f6c8c9;
 import java.io.*;
 import java.nio.file.*;
 import java.sql.*;
@@ -66,15 +66,17 @@ public class PluginMain extends JavaPlugin implements Listener {
 	}
 
 	@EventHandler(priority = EventPriority.NORMAL)
-	public void onPlayerJoinEvent15(org.bukkit.event.player.PlayerJoinEvent event) throws Exception {
+	public void onPlayerJoinEvent17(org.bukkit.event.player.PlayerJoinEvent event) throws Exception {
 		if (!event.getPlayer().isOp()) {
-			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), ((java.lang.String) null));
+			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), (((java.lang.String) null) + ((java.lang.String) null)));
 			event.getPlayer().sendTitle("Welcome!", "Please read the chat!",
 					(int) java.time.Duration.ofSeconds(((long) 2d)).getSeconds() * 20,
 					(int) java.time.Duration.ofSeconds(((long) 5d)).getSeconds() * 20,
 					(int) java.time.Duration.ofSeconds(((long) 2d)).getSeconds() * 20);
 			event.getPlayer().sendMessage(PluginMain.color(
 					"The server is currently still in InDev stage of development, which is why you're currently in Spectator mode!"));
+			Bukkit.getConsoleSender().sendMessage(
+					PluginMain.color((event.getPlayer().getName() + "wasn't opped so was set to spectator gamemode.")));
 		}
 	}
 }
