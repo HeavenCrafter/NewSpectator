@@ -1,4 +1,4 @@
-package a632ad40410f2456c91c40db299e35391;
+package aee78756c9b2048aa87afacc5a939fd4d;
 import java.io.*;
 import java.nio.file.*;
 import java.sql.*;
@@ -18,6 +18,7 @@ public class PluginMain extends JavaPlugin implements Listener {
 	private static PluginMain instance;
 
 	public void onEnable() {
+		saveDefaultConfig();
 		instance = this;
 		getServer().getPluginManager().registerEvents(this, this);
 		try {
@@ -66,7 +67,7 @@ public class PluginMain extends JavaPlugin implements Listener {
 	}
 
 	@EventHandler(priority = EventPriority.NORMAL)
-	public void onPlayerJoinEvent19(org.bukkit.event.player.PlayerJoinEvent event) throws Exception {
+	public void onPlayerJoinEvent20(org.bukkit.event.player.PlayerJoinEvent event) throws Exception {
 		if (!event.getPlayer().isOp()) {
 			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), ("gamemode spectator" + event.getPlayer().getName()));
 			event.getPlayer().sendTitle("Welcome!", "Please read the chat!",
