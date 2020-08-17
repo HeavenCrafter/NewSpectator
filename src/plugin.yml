@@ -1,7 +1,8 @@
 name: NewSpectator
-version: 1.0.1
-main: a5ef9205469334a0e9754958560f6c8c9.PluginMain
+version: 1.0.3
+main: a295eb74fa9ce444bbd3764757345ddc6.PluginMain
 author: Heaven
 description: Sets new players to Spectator Mode
+softdepend: [net.ess3:EssentialsX:2.18.1]
 api-version: 1.13
 commands:

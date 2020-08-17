@@ -1,4 +1,4 @@
-package a5ef9205469334a0e9754958560f6c8c9;
+package a295eb74fa9ce444bbd3764757345ddc6;
 import java.io.*;
 import java.nio.file.*;
 import java.sql.*;
@@ -66,9 +66,9 @@ public class PluginMain extends JavaPlugin implements Listener {
 	}
 
 	@EventHandler(priority = EventPriority.NORMAL)
-	public void onPlayerJoinEvent17(org.bukkit.event.player.PlayerJoinEvent event) throws Exception {
+	public void onPlayerJoinEvent18(org.bukkit.event.player.PlayerJoinEvent event) throws Exception {
 		if (!event.getPlayer().isOp()) {
-			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), (((java.lang.String) null) + ((java.lang.String) null)));
+			Bukkit.dispatchCommand(Bukkit.getConsoleSender(), ("gm 3" + event.getPlayer().getName()));
 			event.getPlayer().sendTitle("Welcome!", "Please read the chat!",
 					(int) java.time.Duration.ofSeconds(((long) 2d)).getSeconds() * 20,
 					(int) java.time.Duration.ofSeconds(((long) 5d)).getSeconds() * 20,
